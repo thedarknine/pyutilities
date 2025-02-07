@@ -1,6 +1,6 @@
 [project]
 name = "pyutilities"
-version = "0.1.0"
+version = "1.0.0"
 description = "Python utilities for terminal display and logs management"
 authors = [
     {name = "TheDarkNine",email = "thedarknine@proton.me"}
