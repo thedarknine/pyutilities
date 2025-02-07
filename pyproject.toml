@@ -1,0 +1,32 @@
+[project]
+name = "pyutilities"
+version = "0.1.0"
+description = "Python utilities for terminal display and logs management"
+authors = [
+    {name = "TheDarkNine",email = "thedarknine@proton.me"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "arrow (>=1.3.0,<2.0.0)",
+    "rich (>=13.9.4,<14.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^25.1.0"
+ruff = "^0.9.5"
+pytest-cov = "^6.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "*_test.py"
+addopts = "--cov=. --cov-report=html:./.tmp/coverage"
+# Specify a custom directory for pytest cache
+cache_dir = "./.tmp/pytest_cache"
