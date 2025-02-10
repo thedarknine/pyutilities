@@ -7,7 +7,7 @@ import arrow
 import display
 
 
-def init_logger(logs_path: str = os.getenv("LOGS_DIR", "logs")) -> logging.Logger:
+def init_logger(logs_path: str = os.getenv("LOGS_DIR", "../logs")) -> logging.Logger:
     """Initialize log file for current date.
 
     Args:
@@ -57,4 +57,4 @@ def get_logger() -> logging.Logger:
     Returns:
         logging.Logger: Logger object
     """
-    return logging.getLogger(os.getenv("LOGS_NAME", "logs"))
+    return logging.getLogger(os.getenv("LOGS_NAME", "../logs"))
