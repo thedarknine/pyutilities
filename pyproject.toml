@@ -38,7 +38,6 @@ pylint = "^3.3.4"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-python_files = "*_test.py"
+python_files = "test_*.py"
 addopts = "--cov=. --cov-report=html:./.tmp/coverage"
-# Specify a custom directory for pytest cache
 cache_dir = "./.tmp/pytest_cache"

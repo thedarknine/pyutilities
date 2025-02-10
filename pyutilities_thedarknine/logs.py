@@ -7,7 +7,7 @@ import arrow
 from pyutilities_thedarknine import display
 
 
-def init_logger(logs_path: str = os.getenv("LOGS_DIR", "../logs")) -> logging.Logger:
+def init_logger(logs_path: str = os.getenv("LOGS_DIR", "logs")) -> logging.Logger:
     """Initialize log file for current date.
 
     Args:

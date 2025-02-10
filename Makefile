@@ -3,7 +3,7 @@ SHELL := /bin/bash
 
 .PHONY: *
 
-## BUILD ==============================================================
+## DEVELOP ============================================================
 
 ## Install dependencies
 install:
@@ -26,11 +26,20 @@ test:
 test-report:
 	poetry run pytest -v --cov=pyutilities_thedarknine/ --cov-report=html:./.tmp/coverage
 
+## BUILD ==============================================================
+
+## Build project to package
+build:
+	poetry build
+
+## Publish package to PyPi
+publish:
+	poetry publish --build
 
 ## FORMATTER ==========================================================
 
 # APPLICATION
-APPLICATION := Product Migration
+APPLICATION := PyUtilities package
 
 # COLORS
 GREEN  := $(shell tput -Txterm setaf 2)
