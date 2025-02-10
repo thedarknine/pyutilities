@@ -3,7 +3,7 @@
 import os
 import pathlib
 import shutil
-from logs import (
+from pyutilities_thedarknine.logs import (
     init_logger, get_logger
 )
 

@@ -4,7 +4,7 @@ import logging
 import os
 import sys
 import arrow
-import display
+from pyutilities_thedarknine import display
 
 
 def init_logger(logs_path: str = os.getenv("LOGS_DIR", "../logs")) -> logging.Logger:

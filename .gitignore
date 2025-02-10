@@ -2,3 +2,4 @@
 logs/
 .tmp/
 .coverage
+__pycache__/

@@ -1,7 +1,7 @@
 """Test to check display utilities."""
 
 import arrow
-from display import (
+from pyutilities_thedarknine.display import (
     info, alert, title, items_list, clear_screen, start_info, end_info
 )
 
