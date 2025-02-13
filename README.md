@@ -42,3 +42,10 @@ poetry run ruff check
 ```bash
 poetry run pytest
 ```
+
+* Bump version
+```bash
+poetry version major
+poetry version minor
+poetry version patch
+```
